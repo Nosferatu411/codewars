@@ -1,6 +1,5 @@
-def array_diff(a, b):
-    for i in a:
-        print(i)
+def array_diff(a: list, b: list):
+    return [i for i in a if i not in b]
 
 
-print(array_diff([1, 3, 2], [1, 3]))
+print(array_diff([1, 2, 2], [2]))
